@@ -1,0 +1,3396 @@
+{
+  "version": "1.0.4",
+  "metadata": {},
+  "collections": [
+    {
+      "name": "KE Global",
+      "modes": [
+        {
+          "name": "Default",
+          "variables": [
+            {
+              "name": "color/brand/lightblue/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#57BBEB"
+            },
+            {
+              "name": "color/brand/lightblue/80",
+              "type": "color",
+              "isAlias": false,
+              "value": "#77C8EF"
+            },
+            {
+              "name": "color/brand/lightblue/60",
+              "type": "color",
+              "isAlias": false,
+              "value": "#98D5F3"
+            },
+            {
+              "name": "color/brand/lightblue/40",
+              "type": "color",
+              "isAlias": false,
+              "value": "#BCE4F7"
+            },
+            {
+              "name": "color/brand/lightblue/20",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DDF1FB"
+            },
+            {
+              "name": "color/brand/lightblue/10",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EEF8FD"
+            },
+            {
+              "name": "color/brand/darkblue/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#051766"
+            },
+            {
+              "name": "color/brand/darkblue/80",
+              "type": "color",
+              "isAlias": false,
+              "value": "#374585"
+            },
+            {
+              "name": "color/brand/darkblue/60",
+              "type": "color",
+              "isAlias": false,
+              "value": "#6974A3"
+            },
+            {
+              "name": "color/brand/darkblue/40",
+              "type": "color",
+              "isAlias": false,
+              "value": "#9BA2C2"
+            },
+            {
+              "name": "color/brand/darkblue/20",
+              "type": "color",
+              "isAlias": false,
+              "value": "#CDD1E0"
+            },
+            {
+              "name": "color/brand/darkblue/10",
+              "type": "color",
+              "isAlias": false,
+              "value": "#E6E7EF"
+            },
+            {
+              "name": "color/neutral/90",
+              "type": "color",
+              "isAlias": false,
+              "value": "#252525"
+            },
+            {
+              "name": "color/system/green/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#28794E"
+            },
+            {
+              "name": "color/membership/millionmiler/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#515254"
+            },
+            {
+              "name": "color/membership/millionmiler/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#000000"
+            },
+            {
+              "name": "color/membership/premium/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#9B7B54"
+            },
+            {
+              "name": "color/membership/premium/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#704A27"
+            },
+            {
+              "name": "color/membership/select/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#666D70"
+            },
+            {
+              "name": "color/membership/select/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#515254"
+            },
+            {
+              "name": "color/membership/morningcalm/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#CFCFCF"
+            },
+            {
+              "name": "color/membership/morningcalm/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#5E5E5E"
+            },
+            {
+              "name": "color/membership/skypass/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#57BBEB"
+            },
+            {
+              "name": "color/membership/skypass/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#051766"
+            },
+            {
+              "name": "color/system/green/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#086A36"
+            },
+            {
+              "name": "color/system/lightgreen/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F0FFF4"
+            },
+            {
+              "name": "color/system/lightgreen/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DFF5E5"
+            },
+            {
+              "name": "color/system/orange/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#BD5814"
+            },
+            {
+              "name": "color/system/orange/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#B33C00"
+            },
+            {
+              "name": "color/system/lightorange/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFF7EC"
+            },
+            {
+              "name": "color/system/lightorange/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFE8C9"
+            },
+            {
+              "name": "color/system/red/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DA291C"
+            },
+            {
+              "name": "color/system/red/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#C92317"
+            },
+            {
+              "name": "color/system/red/100-alpha60",
+              "type": "color",
+              "isAlias": false,
+              "value": "#DA291C99"
+            },
+            {
+              "name": "color/system/lightred/100",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFF5F5"
+            },
+            {
+              "name": "color/system/lightred/200",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFE3E3"
+            },
+            {
+              "name": "color/neutral/90-alpha50",
+              "type": "color",
+              "isAlias": false,
+              "value": "#25252580"
+            },
+            {
+              "name": "color/neutral/80",
+              "type": "color",
+              "isAlias": false,
+              "value": "#333333"
+            },
+            {
+              "name": "color/neutral/70",
+              "type": "color",
+              "isAlias": false,
+              "value": "#5E5E5E"
+            },
+            {
+              "name": "color/neutral/60",
+              "type": "color",
+              "isAlias": false,
+              "value": "#A4A4A4"
+            },
+            {
+              "name": "color/neutral/50",
+              "type": "color",
+              "isAlias": false,
+              "value": "#BDBDBD"
+            },
+            {
+              "name": "color/neutral/40",
+              "type": "color",
+              "isAlias": false,
+              "value": "#D9D9D9"
+            },
+            {
+              "name": "color/neutral/30",
+              "type": "color",
+              "isAlias": false,
+              "value": "#EDEDED"
+            },
+            {
+              "name": "color/neutral/20",
+              "type": "color",
+              "isAlias": false,
+              "value": "#F7F7F7"
+            },
+            {
+              "name": "color/neutral/10",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF"
+            },
+            {
+              "name": "color/neutral/10-alpha80",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFFCC"
+            },
+            {
+              "name": "color/neutral/10-alpha40",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF66"
+            },
+            {
+              "name": "size/0",
+              "type": "number",
+              "isAlias": false,
+              "value": 0
+            },
+            {
+              "name": "size/1",
+              "type": "number",
+              "isAlias": false,
+              "value": 1
+            },
+            {
+              "name": "size/2",
+              "type": "number",
+              "isAlias": false,
+              "value": 2
+            },
+            {
+              "name": "size/4",
+              "type": "number",
+              "isAlias": false,
+              "value": 4
+            },
+            {
+              "name": "size/8",
+              "type": "number",
+              "isAlias": false,
+              "value": 8
+            },
+            {
+              "name": "size/12",
+              "type": "number",
+              "isAlias": false,
+              "value": 12
+            },
+            {
+              "name": "size/16",
+              "type": "number",
+              "isAlias": false,
+              "value": 16
+            },
+            {
+              "name": "size/20",
+              "type": "number",
+              "isAlias": false,
+              "value": 20
+            },
+            {
+              "name": "size/24",
+              "type": "number",
+              "isAlias": false,
+              "value": 24
+            },
+            {
+              "name": "size/28",
+              "type": "number",
+              "isAlias": false,
+              "value": 28
+            },
+            {
+              "name": "size/32",
+              "type": "number",
+              "isAlias": false,
+              "value": 32
+            },
+            {
+              "name": "size/36",
+              "type": "number",
+              "isAlias": false,
+              "value": 36
+            },
+            {
+              "name": "size/40",
+              "type": "number",
+              "isAlias": false,
+              "value": 40
+            },
+            {
+              "name": "size/48",
+              "type": "number",
+              "isAlias": false,
+              "value": 48
+            },
+            {
+              "name": "size/56",
+              "type": "number",
+              "isAlias": false,
+              "value": 56
+            },
+            {
+              "name": "size/64",
+              "type": "number",
+              "isAlias": false,
+              "value": 64
+            },
+            {
+              "name": "size/80",
+              "type": "number",
+              "isAlias": false,
+              "value": 80
+            },
+            {
+              "name": "size/96",
+              "type": "number",
+              "isAlias": false,
+              "value": 96
+            },
+            {
+              "name": "size/112",
+              "type": "number",
+              "isAlias": false,
+              "value": 112
+            },
+            {
+              "name": "size/128",
+              "type": "number",
+              "isAlias": false,
+              "value": 128
+            },
+            {
+              "name": "size/9999",
+              "type": "number",
+              "isAlias": false,
+              "value": 9999
+            },
+            {
+              "name": "font/family/hanjingroup-sans",
+              "type": "string",
+              "isAlias": false,
+              "value": "Hanjin Group Sans"
+            },
+            {
+              "name": "font/family/yugothic-ui",
+              "type": "string",
+              "isAlias": false,
+              "value": "Yu Gothic UI"
+            },
+            {
+              "name": "font/family/microsoft-yahei",
+              "type": "string",
+              "isAlias": false,
+              "value": "Microsoft YaHei"
+            },
+            {
+              "name": "font/family/microsoft-jhenghei",
+              "type": "string",
+              "isAlias": false,
+              "value": "Microsoft JhengHei"
+            },
+            {
+              "name": "font/family/helvetica-neue",
+              "type": "string",
+              "isAlias": false,
+              "value": "Helvetica neue"
+            },
+            {
+              "name": "font/family/roboto",
+              "type": "string",
+              "isAlias": false,
+              "value": "Roboto"
+            },
+            {
+              "name": "font/weight/light",
+              "type": "string",
+              "isAlias": false,
+              "value": "300"
+            },
+            {
+              "name": "font/weight/regular",
+              "type": "string",
+              "isAlias": false,
+              "value": "400"
+            },
+            {
+              "name": "font/size/90",
+              "type": "number",
+              "isAlias": false,
+              "value": 42
+            },
+            {
+              "name": "font/size/80",
+              "type": "number",
+              "isAlias": false,
+              "value": 36
+            },
+            {
+              "name": "font/size/70",
+              "type": "number",
+              "isAlias": false,
+              "value": 28
+            },
+            {
+              "name": "font/size/60",
+              "type": "number",
+              "isAlias": false,
+              "value": 24
+            },
+            {
+              "name": "font/size/50",
+              "type": "number",
+              "isAlias": false,
+              "value": 21
+            },
+            {
+              "name": "font/size/40",
+              "type": "number",
+              "isAlias": false,
+              "value": 18
+            },
+            {
+              "name": "font/size/30",
+              "type": "number",
+              "isAlias": false,
+              "value": 16
+            },
+            {
+              "name": "font/size/20",
+              "type": "number",
+              "isAlias": false,
+              "value": 14
+            },
+            {
+              "name": "font/size/10",
+              "type": "number",
+              "isAlias": false,
+              "value": 12
+            },
+            {
+              "name": "font/weight/bold",
+              "type": "string",
+              "isAlias": false,
+              "value": "700"
+            },
+            {
+              "name": "color/brand/darkblue/10-alpha20",
+              "type": "color",
+              "isAlias": false,
+              "value": "#E6E7EF33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "KE Alias",
+      "modes": [
+        {
+          "name": "Default",
+          "variables": [
+            {
+              "name": "color/text/title",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/text/body",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/text/body-secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/text/label",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/text/label-alternative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/90"
+              }
+            },
+            {
+              "name": "color/text/inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/text/inverse-secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha80"
+              }
+            },
+            {
+              "name": "color/text/inverse-disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha40"
+              }
+            },
+            {
+              "name": "color/text/disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/60"
+              }
+            },
+            {
+              "name": "color/text/readonly",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/text/pressed-ghost",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/80"
+              }
+            },
+            {
+              "name": "color/icon/primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/text/positive",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/100"
+              }
+            },
+            {
+              "name": "color/icon/secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/icon/tertiary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/60"
+              }
+            },
+            {
+              "name": "color/icon/inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/icon/inverse-secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha80"
+              }
+            },
+            {
+              "name": "color/icon/inverse-disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha40"
+              }
+            },
+            {
+              "name": "color/icon/disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/60"
+              }
+            },
+            {
+              "name": "color/text/positive-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/200"
+              }
+            },
+            {
+              "name": "color/text/highlight",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/100"
+              }
+            },
+            {
+              "name": "color/text/highlight-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/200"
+              }
+            },
+            {
+              "name": "color/text/warning",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/orange/100"
+              }
+            },
+            {
+              "name": "color/text/warning-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/orange/200"
+              }
+            },
+            {
+              "name": "color/text/accent",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100"
+              }
+            },
+            {
+              "name": "color/fill/interaction/primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/20"
+              }
+            },
+            {
+              "name": "color/fill/surface/tertiary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/30"
+              }
+            },
+            {
+              "name": "color/fill/surface/quarternary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/highlight",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/highlight-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/20"
+              }
+            },
+            {
+              "name": "color/fill/surface/highlight-alternative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/40"
+              }
+            },
+            {
+              "name": "color/fill/surface/positive",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightgreen/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/positive-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightgreen/200"
+              }
+            },
+            {
+              "name": "color/fill/surface/positive-accent",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/warning",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightorange/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/warning-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightorange/200"
+              }
+            },
+            {
+              "name": "color/fill/surface/negative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightred/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/negative-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightred/200"
+              }
+            },
+            {
+              "name": "color/fill/surface/bubble",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/20"
+              }
+            },
+            {
+              "name": "color/fill/surface/bubble-inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/fill/surface/scroll",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/fill/surface/sns",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/90"
+              }
+            },
+            {
+              "name": "color/fill/surface/inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/economy",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/extralegroom",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/preferred",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/10"
+              }
+            },
+            {
+              "name": "color/fill/surface/premium",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/premium-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/80"
+              }
+            },
+            {
+              "name": "color/fill/surface/premium-upgrade",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/40"
+              }
+            },
+            {
+              "name": "color/fill/surface/prestige",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/prestige-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/80"
+              }
+            },
+            {
+              "name": "color/fill/surface/prestige-upgrade",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/60"
+              }
+            },
+            {
+              "name": "color/fill/surface/first",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/fill/surface/first-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/80"
+              }
+            },
+            {
+              "name": "color/fill/surface/accent",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100"
+              }
+            },
+            {
+              "name": "color/fill/surface/snackbar",
+              "type": "color",
+              "isAlias": false,
+              "value": "#252525CC"
+            },
+            {
+              "name": "color/fill/surface/ashblue",
+              "type": "color",
+              "isAlias": false,
+              "value": "#395FB8"
+            },
+            {
+              "name": "color/fill/canvas/primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/fill/canvas/secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/20"
+              }
+            },
+            {
+              "name": "color/fill/canvas/tertiary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/30"
+              }
+            },
+            {
+              "name": "color/fill/canvas/scrim",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/90-alpha50"
+              }
+            },
+            {
+              "name": "color/fill/interaction/secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/40"
+              }
+            },
+            {
+              "name": "color/fill/interaction/tertiary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/20"
+              }
+            },
+            {
+              "name": "color/fill/interaction/cta",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/100"
+              }
+            },
+            {
+              "name": "color/fill/interaction/form",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/fill/interaction/overlay",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha80"
+              }
+            },
+            {
+              "name": "color/fill/interaction/overlay-light",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha40"
+              }
+            },
+            {
+              "name": "color/fill/interaction/disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/40"
+              }
+            },
+            {
+              "name": "color/fill/interaction/disabled-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/20"
+              }
+            },
+            {
+              "name": "color/fill/interaction/readonly",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/20"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-switch-basic",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-switch-text",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/30"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-dot",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/60"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-menubar",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/40"
+              }
+            },
+            {
+              "name": "color/fill/interaction/enabled-chip",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/20"
+              }
+            },
+            {
+              "name": "color/fill/interaction/selected-item",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/10"
+              }
+            },
+            {
+              "name": "color/fill/interaction/pressed-solid",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/fill/interaction/pressed-ghost",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/10"
+              }
+            },
+            {
+              "name": "color/fill/interaction/pressed-ghost-inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/10-alpha20"
+              }
+            },
+            {
+              "name": "color/fill/interaction/negative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/lightred/100"
+              }
+            },
+            {
+              "name": "color/text/negative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100"
+              }
+            },
+            {
+              "name": "color/icon/positive",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/100"
+              }
+            },
+            {
+              "name": "color/text/negative-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/200"
+              }
+            },
+            {
+              "name": "color/text/accent-alpha60",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100-alpha60"
+              }
+            },
+            {
+              "name": "color/icon/positive-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/200"
+              }
+            },
+            {
+              "name": "color/icon/warning",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/orange/100"
+              }
+            },
+            {
+              "name": "color/icon/warning-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/orange/200"
+              }
+            },
+            {
+              "name": "color/icon/negative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100"
+              }
+            },
+            {
+              "name": "color/icon/negative-on",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/200"
+              }
+            },
+            {
+              "name": "color/border/primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/border/secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/border/tertiary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/40"
+              }
+            },
+            {
+              "name": "color/border/inverse",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10"
+              }
+            },
+            {
+              "name": "color/border/disabled",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/60"
+              }
+            },
+            {
+              "name": "color/border/readonly",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/70"
+              }
+            },
+            {
+              "name": "color/border/surface",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/40"
+              }
+            },
+            {
+              "name": "color/border/divider-primary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/40"
+              }
+            },
+            {
+              "name": "color/border/divider-secondary",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/30"
+              }
+            },
+            {
+              "name": "color/border/divider-highlight",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/10"
+              }
+            },
+            {
+              "name": "color/border/divider-highlight-blue",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/lightblue/20"
+              }
+            },
+            {
+              "name": "color/border/divider-top",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/brand/darkblue/100"
+              }
+            },
+            {
+              "name": "color/border/positive",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/green/100"
+              }
+            },
+            {
+              "name": "color/border/warning",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/orange/100"
+              }
+            },
+            {
+              "name": "color/border/negative",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/system/red/100"
+              }
+            },
+            {
+              "name": "color/border/transparent",
+              "type": "color",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "color/neutral/10-alpha80"
+              }
+            },
+            {
+              "name": "radius/xs",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/4"
+              }
+            },
+            {
+              "name": "radius/sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/8"
+              }
+            },
+            {
+              "name": "radius/md",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/12"
+              }
+            },
+            {
+              "name": "radius/lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/16"
+              }
+            },
+            {
+              "name": "radius/full",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/9999"
+              }
+            },
+            {
+              "name": "radius/checkbox",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/2"
+              }
+            },
+            {
+              "name": "radius/card",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/16"
+              }
+            },
+            {
+              "name": "radius/button",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "size/24"
+              }
+            },
+            {
+              "name": "font/wide/title-lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/90"
+              }
+            },
+            {
+              "name": "font/wide/title-sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/80"
+              }
+            },
+            {
+              "name": "font/wide/subtitle-lg-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/70"
+              }
+            },
+            {
+              "name": "font/wide/subtitle-lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/70"
+              }
+            },
+            {
+              "name": "font/wide/subtitle-sm-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/wide/subtitle-sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/body-xl-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/body-xl",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/body-lg-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/40"
+              }
+            },
+            {
+              "name": "font/body-lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/40"
+              }
+            },
+            {
+              "name": "font/body-md-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/30"
+              }
+            },
+            {
+              "name": "font/body-md",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/30"
+              }
+            },
+            {
+              "name": "font/body-sm-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/20"
+              }
+            },
+            {
+              "name": "font/body-sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/20"
+              }
+            },
+            {
+              "name": "font/body-xs-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/10"
+              }
+            },
+            {
+              "name": "font/body-xs",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/10"
+              }
+            },
+            {
+              "name": "font/compact/title-lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/70"
+              }
+            },
+            {
+              "name": "font/compact/title-sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/60"
+              }
+            },
+            {
+              "name": "font/compact/subtitle-lg-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/compact/subtitle-lg",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/50"
+              }
+            },
+            {
+              "name": "font/compact/subtitle-sm-bold",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/40"
+              }
+            },
+            {
+              "name": "font/compact/subtitle-sm",
+              "type": "number",
+              "isAlias": true,
+              "value": {
+                "collection": "KE Global",
+                "name": "font/size/40"
+              }
+            },
+            {
+              "name": "color/fill/interaction/transparent",
+              "type": "color",
+              "isAlias": false,
+              "value": "#FFFFFF00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "modes": [
+        {
+          "name": "Style",
+          "variables": [
+            {
+              "name": "body-xl-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-xl",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-lg-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-md-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 16,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-md",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 16,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-sm-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-xs-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 12,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "body-xs",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 12,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "underline-xxl-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-xxl",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-xl-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-xl",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-lg-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-md-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 16,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-md",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 16,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-sm-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "underline-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "strikethrough-xl",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Light",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "STRIKETHROUGH"
+              }
+            },
+            {
+              "name": "strikethrough-md",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 16,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Light",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "STRIKETHROUGH"
+              }
+            },
+            {
+              "name": "strikethrough-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Light",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "STRIKETHROUGH"
+              }
+            },
+            {
+              "name": "strikethrough-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Light",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "STRIKETHROUGH"
+              }
+            },
+            {
+              "name": "stikethrough-xs",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 12,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Light",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "STRIKETHROUGH"
+              }
+            },
+            {
+              "name": "naviagiton-bar-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 11,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": -2,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "navigation-bar-regular",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 11,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": -2,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "navigation-bar-regular-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 11,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": -2,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "emphasize",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 36,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "underline-xs",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 12,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "body-sm-narrow",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 14,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "navigation-bar-bold-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 11,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": -2,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "wide/title-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 36,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/title-lg-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 36,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "wide/title-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 28,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/title-sm-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 28,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "wide/subtitle-lg-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/subtitle-lg-bold-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "wide/subtitle-lg-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/subtitle-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/subtitle-lg-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "wide/subtitle-sm-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "wide/subtitle-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/title-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 28,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/title-lg-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 28,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "compact/title-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/title-sm-underline",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 24,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 129.99999523162842,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "UNDERLINE"
+              }
+            },
+            {
+              "name": "compact/subtitle-lg-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/subtitle-lg",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 21,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/subtitle-sm-bold",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Bold",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            },
+            {
+              "name": "compact/subtitle-sm",
+              "type": "typography",
+              "isAlias": false,
+              "value": {
+                "fontSize": 18,
+                "fontFamily": "Hanjin Group Sans",
+                "fontWeight": "Regular",
+                "lineHeight": 150,
+                "lineHeightUnit": "PERCENT",
+                "letterSpacing": 0,
+                "letterSpacingUnit": "PERCENT",
+                "textCase": "ORIGINAL",
+                "textDecoration": "NONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "modes": [
+        {
+          "name": "Style",
+          "variables": [
+            {
+              "name": "blur",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.06
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "radius": 4,
+                    "spread": -1
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "radius": 12,
+                    "spread": -1
+                  },
+                  {
+                    "type": "BACKGROUND_BLUR",
+                    "radius": 10
+                  }
+                ]
+              }
+            },
+            {
+              "name": "shadow/sm",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.06
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "radius": 2,
+                    "spread": 0
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "radius": 3,
+                    "spread": 0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "shadow/md",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.06
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "radius": 4,
+                    "spread": -1
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "radius": 12,
+                    "spread": -1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "shadow/lg",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.05
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": -4
+                    },
+                    "radius": 6,
+                    "spread": -2
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "radius": 15,
+                    "spread": -3
+                  }
+                ]
+              }
+            },
+            {
+              "name": "shadow/xl",
+              "type": "effect",
+              "isAlias": false,
+              "value": {
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.04
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": -2
+                    },
+                    "radius": 10,
+                    "spread": 0
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "offset": {
+                      "x": 0,
+                      "y": 20
+                    },
+                    "radius": 25,
+                    "spread": -5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grids",
+      "modes": [
+        {
+          "name": "Style",
+          "variables": [
+            {
+              "name": "wide",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "sectionSize": 60,
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "CENTER",
+                    "gutterSize": 32,
+                    "count": 16
+                  },
+                  {
+                    "pattern": "COLUMNS",
+                    "sectionSize": 336,
+                    "color": {
+                      "r": 47,
+                      "g": 113,
+                      "b": 255,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 240,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 120,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "wide-lg",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "sectionSize": 60,
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "CENTER",
+                    "gutterSize": 32,
+                    "count": 16
+                  },
+                  {
+                    "pattern": "COLUMNS",
+                    "sectionSize": 336,
+                    "color": {
+                      "r": 47,
+                      "g": 113,
+                      "b": 255,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 20,
+                    "offset": 240,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 120,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "wide(bridge)",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 360,
+                    "count": 12
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 120,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "wide-lg(bridge)",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 120,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 360,
+                    "count": 12
+                  }
+                ]
+              }
+            },
+            {
+              "name": "wide-sm",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 20,
+                    "count": 12
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 120,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "compact-lg",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 16,
+                    "offset": 20,
+                    "count": 8
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 52,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 64,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MAX",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "compact-sm",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 16,
+                    "offset": 20,
+                    "count": 4
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 52,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 64,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MAX",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "compact",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 244,
+                      "g": 0,
+                      "b": 249,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 16,
+                    "offset": 20,
+                    "count": 4
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 52,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "sectionSize": 64,
+                    "color": {
+                      "r": 151,
+                      "g": 151,
+                      "b": 151,
+                      "a": 0.1
+                    },
+                    "alignment": "MAX",
+                    "gutterSize": 1,
+                    "offset": 0,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "seat-selection",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 0.5
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 0,
+                    "offset": 4,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 0.5
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 0,
+                    "offset": 4,
+                    "count": 1
+                  },
+                  {
+                    "pattern": "ROWS",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 0.3
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 0,
+                    "offset": 12,
+                    "count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/small-375",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 16,
+                    "offset": 20,
+                    "count": 4
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/medium-980",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 40,
+                    "count": 16
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/medium-980(bridge)",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 40,
+                    "count": 12
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/medium-768",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 16,
+                    "offset": 20,
+                    "count": 8
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/large-1200(bridge)",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 32,
+                    "offset": 360,
+                    "count": 12
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/large-1440",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "sectionSize": 60,
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "MIN",
+                    "gutterSize": 32,
+                    "offset": 240,
+                    "count": 16
+                  }
+                ]
+              }
+            },
+            {
+              "name": "grid/Foundation",
+              "type": "grid",
+              "isAlias": false,
+              "value": {
+                "layoutGrids": [
+                  {
+                    "pattern": "COLUMNS",
+                    "color": {
+                      "r": 255,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0.1
+                    },
+                    "alignment": "STRETCH",
+                    "gutterSize": 40,
+                    "offset": 100,
+                    "count": 12
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
