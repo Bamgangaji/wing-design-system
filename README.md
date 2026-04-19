@@ -1,6 +1,6 @@
 # Wing Design System — Foundation Tokens
 
-대한항공 Wing Design System(WDS)의 디자인 파운데이션 토큰 소스 저장소입니다.  
+Wing Design System(WDS)의 디자인 파운데이션 토큰 소스 저장소입니다.  
 Figma Variables를 JSON 형식으로 관리하며, 디자이너와 프론트엔드 개발자가 함께 사용합니다.
 
 ---
