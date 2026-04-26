@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WDS Design System Editor</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a2e; }
+
+  .topbar {
+    background: #051766;
+    color: #fff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .topbar-left { display: flex; align-items: center; gap: 12px; }
+  .topbar-logo { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; }
+  .topbar-sub { font-size: 12px; color: #57BBEB; }
+  .topbar-right { display: flex; gap: 10px; }
+  .btn-download {
+    background: #57BBEB; color: #051766; border: none;
+    padding: 8px 20px; border-radius: 99px; font-size: 13px;
+    font-weight: 700; cursor: pointer; transition: background 0.15s;
+  }
+  .btn-download:hover { background: #77C8EF; }
+  .btn-copy {
+    background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3);
+    padding: 8px 20px; border-radius: 99px; font-size: 13px;
+    font-weight: 600; cursor: pointer;
+  }
+  .btn-copy:hover { background: rgba(255,255,255,0.1); }
+
+  .layout { display: flex; height: calc(100vh - 52px); }
+
+  /* 사이드바 */
+  .sidebar {
+    width: 240px; min-width: 240px; background: #fff;
+    border-right: 1px solid #e8e8e8; overflow-y: auto;
+    padding: 12px 0;
+  }
+  .sidebar-section { margin-bottom: 4px; }
+  .sidebar-section-title {
+    font-size: 10px; font-weight: 700; color: #a4a4a4;
+    letter-spacing: 0.8px; text-transform: uppercase;
+    padding: 8px 16px 4px;
+  }
+  .sidebar-item {
+    display: block; width: 100%; text-align: left;
+    padding: 7px 16px; font-size: 13px; color: #333;
+    background: none; border: none; cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.1s;
+  }
+  .sidebar-item:hover { background: #f7f7f7; color: #051766; }
+  .sidebar-item.active {
+    background: #EEF8FD; color: #051766; font-weight: 600;
+    border-left-color: #051766;
+  }
+
+  /* 메인 에디터 */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .editor-header {
+    background: #fff; border-bottom: 1px solid #e8e8e8;
+    padding: 12px 24px; display: flex; align-items: center; gap: 12px;
+  }
+  .editor-section-label {
+    font-size: 11px; color: #a4a4a4; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .editor-title { font-size: 16px; font-weight: 700; color: #051766; }
+  .editor-body { flex: 1; display: flex; overflow: hidden; }
+
+  .editor-pane {
+    flex: 1; display: flex; flex-direction: column; border-right: 1px solid #e8e8e8;
+  }
+  .pane-label {
+    font-size: 11px; font-weight: 600; color: #a4a4a4;
+    padding: 8px 16px; background: #fafafa; border-bottom: 1px solid #ebebeb;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  textarea {
+    flex: 1; border: none; outline: none; resize: none;
+    padding: 20px; font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 13px; line-height: 1.7; color: #333;
+    background: #fff;
+  }
+
+  .preview-pane { flex: 1; overflow-y: auto; padding: 24px; background: #fafafa; }
+  .preview-content h1 { font-size: 22px; font-weight: 700; color: #051766; margin: 0 0 16px; border-bottom: 2px solid #051766; padding-bottom: 8px; }
+  .preview-content h2 { font-size: 18px; font-weight: 700; color: #051766; margin: 24px 0 12px; }
+  .preview-content h3 { font-size: 15px; font-weight: 700; color: #374585; margin: 18px 0 8px; }
+  .preview-content h4 { font-size: 14px; font-weight: 700; color: #051766; margin: 14px 0 6px; border-left: 3px solid #57BBEB; padding-left: 8px; }
+  .preview-content p { font-size: 14px; line-height: 1.7; color: #333; margin: 0 0 10px; }
+  .preview-content ul, .preview-content ol { padding-left: 20px; margin: 0 0 10px; }
+  .preview-content li { font-size: 14px; line-height: 1.7; color: #333; margin: 2px 0; }
+  .preview-content code { background: #f0f0f0; padding: 1px 6px; border-radius: 4px; font-family: monospace; font-size: 12px; color: #051766; }
+  .preview-content table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+  .preview-content th { background: #E6E7EF; color: #051766; font-weight: 600; padding: 7px 10px; text-align: left; border: 1px solid #D9D9D9; }
+  .preview-content td { padding: 6px 10px; border: 1px solid #D9D9D9; color: #333; }
+  .preview-content tr:nth-child(even) td { background: #f7f7f7; }
+  .preview-content hr { border: none; border-top: 1px solid #D9D9D9; margin: 16px 0; }
+  .preview-content blockquote { border-left: 3px solid #57BBEB; padding: 8px 12px; background: #EEF8FD; margin: 10px 0; border-radius: 0 6px 6px 0; }
+  .preview-content strong { font-weight: 700; color: #051766; }
+
+  .changed-badge {
+    display: inline-block; background: #DA291C; color: #fff;
+    font-size: 10px; font-weight: 700; padding: 2px 7px;
+    border-radius: 99px; margin-left: 6px; vertical-align: middle;
+  }
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: #252525CC; color: #fff; padding: 10px 20px;
+    border-radius: 99px; font-size: 13px; font-weight: 500;
+    opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 999;
+  }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <div>
+      <div class="topbar-logo">WDS Design System</div>
+      <div class="topbar-sub">Wing Design System — Claude용 MD 에디터</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <button class="btn-copy" onclick="copyAll()">전체 복사</button>
+    <button class="btn-download" onclick="downloadMD()">MD 다운로드</button>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="sidebar" id="sidebar"></div>
+  <div class="main">
+    <div class="editor-header">
+      <div>
+        <div class="editor-section-label" id="sectionLabel">섹션</div>
+        <div class="editor-title" id="editorTitle">항목을 선택하세요</div>
+      </div>
+    </div>
+    <div class="editor-body">
+      <div class="editor-pane">
+        <div class="pane-label">✏️ 편집</div>
+        <textarea id="editor" placeholder="좌측에서 섹션을 선택하세요" oninput="onEdit()"></textarea>
+      </div>
+      <div class="preview-pane">
+        <div class="pane-label">👁 미리보기</div>
+        <div class="preview-content" id="preview"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── 전체 MD 데이터 ──────────────────────────────────────────────
+const sections = [
+  {
+    group: "1. Overview",
+    items: [
+      { id: "overview-info", label: "시스템 정보", content: `## 1.1 시스템 정보
+- **제품**: 대한항공 모바일 앱 및 웹 서비스
+- **디자인 시스템명**: WDS (Wing Design System)
+- **운영 도구**: Figma, Zeroheight
+- **토큰 컬렉션**: KE Global (Primitive) → KE Alias (Semantic)` },
+      { id: "overview-naming", label: "네이밍 컨벤션", content: `## 1.2 네이밍 컨벤션
+- 토큰은 \`카테고리/역할/상태\` 구조로 작성한다.
+  - 예: \`color/text/title\`, \`color/fill/interaction/primary\`
+- 컴포넌트명은 PascalCase 또는 kebab-case로 표기한다.
+  - 예: \`Button\`, \`InputBox\`, \`button\`, \`input-box\`
+- Variant는 Figma의 Property 명칭을 따른다.
+- 상태는 \`default\`, \`hover\`, \`pressed\`, \`focused\`, \`disabled\`, \`readonly\`, \`error\` 순서로 정의한다.` },
+      { id: "overview-breakpoint", label: "반응형 브레이크포인트", content: `## 1.3 반응형 브레이크포인트
+| 이름 | 너비 | 컬럼 수 | 거터 | 마진 |
+|------|------|---------|------|------|
+| small | 375px | 4 | 16px | 20px |
+| medium-768 | 768px | 8 | 16px | 20px |
+| medium-980 | 980px | 16 | 32px | 40px |
+| large-1200 | 1200px | 12 | 32px | 360px |
+| large-1440 | 1440px | 16 | 32px | 240px |
+| compact (모바일 앱) | - | 4 | 16px | 20px |` },
+    ]
+  },
+  {
+    group: "2. Foundation",
+    items: [
+      { id: "foundation-brand", label: "Brand 색상", content: `## 2.1 Brand Colors
+
+### Dark Blue (네이비, 대표 색상)
+| 토큰 | Hex | 용도 |
+|------|-----|------|
+| \`color/brand/darkblue/100\` | \`#051766\` | Primary 브랜드 색상, 주요 텍스트, CTA |
+| \`color/brand/darkblue/80\` | \`#374585\` | Pressed 상태, 보조 강조 |
+| \`color/brand/darkblue/60\` | \`#6974A3\` | 중간 강조 |
+| \`color/brand/darkblue/40\` | \`#9BA2C2\` | 비활성 강조 |
+| \`color/brand/darkblue/20\` | \`#CDD1E0\` | 연한 배경 |
+| \`color/brand/darkblue/10\` | \`#E6E7EF\` | 매우 연한 배경, 선택 상태 배경 |
+| \`color/brand/darkblue/10-alpha20\` | \`#E6E7EF33\` | 반투명 오버레이 |
+
+### Light Blue (스카이 블루, 보조 브랜드 색상)
+| 토큰 | Hex | 용도 |
+|------|-----|------|
+| \`color/brand/lightblue/100\` | \`#57BBEB\` | CTA, 인터랙션 강조 |
+| \`color/brand/lightblue/80\` | \`#77C8EF\` | Hover 상태 |
+| \`color/brand/lightblue/60\` | \`#98D5F3\` | 보조 강조 |
+| \`color/brand/lightblue/40\` | \`#BCE4F7\` | 연한 강조 배경 |
+| \`color/brand/lightblue/20\` | \`#DDF1FB\` | 버블 배경, 하이라이트 |
+| \`color/brand/lightblue/10\` | \`#EEF8FD\` | 선택 항목 배경 |` },
+      { id: "foundation-neutral", label: "Neutral 색상", content: `## 2.1 Neutral Colors
+| 토큰 | Hex | 용도 |
+|------|-----|------|
+| \`color/neutral/90\` | \`#252525\` | 거의 검정, 강조 텍스트 |
+| \`color/neutral/90-alpha50\` | \`#25252580\` | Scrim (딤처리) |
+| \`color/neutral/80\` | \`#333333\` | 본문 텍스트 보조 |
+| \`color/neutral/70\` | \`#5E5E5E\` | 보조 텍스트, 아이콘 |
+| \`color/neutral/60\` | \`#A4A4A4\` | 비활성, Disabled 텍스트 |
+| \`color/neutral/50\` | \`#BDBDBD\` | 연한 비활성 |
+| \`color/neutral/40\` | \`#D9D9D9\` | 테두리, Disabled 배경 |
+| \`color/neutral/30\` | \`#EDEDED\` | 구분선, 배경 |
+| \`color/neutral/20\` | \`#F7F7F7\` | 보조 배경 |
+| \`color/neutral/10\` | \`#FFFFFF\` | 기본 배경, 흰색 |
+| \`color/neutral/10-alpha80\` | \`#FFFFFFCC\` | 반투명 흰색 오버레이 |
+| \`color/neutral/10-alpha40\` | \`#FFFFFF66\` | 연한 반투명 흰색 |` },
+      { id: "foundation-system", label: "System 색상", content: `## 2.1 System Colors
+| 토큰 | Hex | 의미 |
+|------|-----|------|
+| \`color/system/green/100\` | \`#28794E\` | Positive (성공/완료) |
+| \`color/system/green/200\` | \`#086A36\` | Positive 강조 |
+| \`color/system/lightgreen/100\` | \`#F0FFF4\` | Positive 배경 |
+| \`color/system/lightgreen/200\` | \`#DFF5E5\` | Positive 배경 강조 |
+| \`color/system/orange/100\` | \`#BD5814\` | Warning (경고) |
+| \`color/system/orange/200\` | \`#B33C00\` | Warning 강조 |
+| \`color/system/lightorange/100\` | \`#FFF7EC\` | Warning 배경 |
+| \`color/system/lightorange/200\` | \`#FFE8C9\` | Warning 배경 강조 |
+| \`color/system/red/100\` | \`#DA291C\` | Negative/Accent (오류/강조) |
+| \`color/system/red/200\` | \`#C92317\` | Negative 강조 |
+| \`color/system/lightred/100\` | \`#FFF5F5\` | Negative 배경 |
+| \`color/system/lightred/200\` | \`#FFE3E3\` | Negative 배경 강조 |` },
+      { id: "foundation-membership", label: "Membership 색상", content: `## 2.1 Membership Colors (SKYPASS 등급)
+| 토큰 | Hex | 등급 |
+|------|-----|------|
+| \`color/membership/skypass/100\` | \`#57BBEB\` | SKYPASS (Light Blue) |
+| \`color/membership/skypass/200\` | \`#051766\` | SKYPASS (Dark Blue) |
+| \`color/membership/morningcalm/100\` | \`#CFCFCF\` | 모닝캄 (밝은 회색) |
+| \`color/membership/morningcalm/200\` | \`#5E5E5E\` | 모닝캄 (어두운 회색) |
+| \`color/membership/select/100\` | \`#666D70\` | 밀리언마일러 셀렉트 |
+| \`color/membership/select/200\` | \`#515254\` | 밀리언마일러 셀렉트 강조 |
+| \`color/membership/premium/100\` | \`#9B7B54\` | 프리미엄 (골드) |
+| \`color/membership/premium/200\` | \`#704A27\` | 프리미엄 강조 |
+| \`color/membership/millionmiler/100\` | \`#515254\` | 밀리언마일러 |
+| \`color/membership/millionmiler/200\` | \`#000000\` | 밀리언마일러 강조 |` },
+      { id: "foundation-semantic", label: "Semantic 색상", content: `## 2.2 Semantic Colors (KE Alias)
+
+### Text
+| 시맨틱 토큰 | Hex | 용도 |
+|------------|-----|------|
+| \`color/text/title\` | \`#051766\` | 제목 텍스트 |
+| \`color/text/body\` | \`#051766\` | 본문 텍스트 |
+| \`color/text/body-secondary\` | \`#5E5E5E\` | 보조 본문 텍스트 |
+| \`color/text/disabled\` | \`#A4A4A4\` | 비활성 텍스트 |
+| \`color/text/inverse\` | \`#FFFFFF\` | 어두운 배경 위 텍스트 |
+| \`color/text/positive\` | \`#28794E\` | 성공/완료 텍스트 |
+| \`color/text/warning\` | \`#BD5814\` | 경고 텍스트 |
+| \`color/text/negative\` | \`#DA291C\` | 오류 텍스트 |
+| \`color/text/accent\` | \`#DA291C\` | 강조 텍스트 |
+
+### Fill — Interaction
+| 시맨틱 토큰 | Hex | 용도 |
+|------------|-----|------|
+| \`color/fill/interaction/primary\` | \`#051766\` | Primary 버튼/요소 배경 |
+| \`color/fill/interaction/cta\` | \`#57BBEB\` | CTA 버튼 배경 |
+| \`color/fill/interaction/disabled\` | \`#D9D9D9\` | 비활성 배경 |
+| \`color/fill/interaction/selected-item\` | \`#EEF8FD\` | 선택된 항목 배경 |
+| \`color/fill/interaction/form\` | \`#FFFFFF\` | 폼 입력 배경 |
+
+### Border
+| 시맨틱 토큰 | Hex | 용도 |
+|------------|-----|------|
+| \`color/border/primary\` | \`#051766\` | 강조 테두리 |
+| \`color/border/tertiary\` | \`#D9D9D9\` | 기본 구분 테두리 |
+| \`color/border/negative\` | \`#DA291C\` | 오류 테두리 |
+| \`color/border/divider-top\` | \`#051766\` | 상단 강조 구분선 |` },
+      { id: "foundation-typography", label: "타이포그래피", content: `## 2.3 Typography
+
+### 폰트 패밀리
+| 토큰 | 값 | 언어 |
+|------|-----|------|
+| \`font/family/hanjingroup-sans\` | \`Hanjin Group Sans\` | 한국어 (기본) |
+| \`font/family/yugothic-ui\` | \`Yu Gothic UI\` | 일본어 |
+| \`font/family/microsoft-yahei\` | \`Microsoft YaHei\` | 중국어 간체 |
+| \`font/family/helvetica-neue\` | \`Helvetica Neue\` | 영어 (대체) |
+| \`font/family/roboto\` | \`Roboto\` | 영어 (Android) |
+
+### 타이포그래피 스케일
+| 토큰 | 크기 | 웨이트 | Line Height | 용도 |
+|------|------|--------|-------------|------|
+| \`body-xl-bold\` | 21px | 700 | 150% | 대형 강조 본문 |
+| \`body-xl\` | 21px | 400 | 150% | 대형 본문 |
+| \`body-lg-bold\` | 18px | 700 | 150% | 중대형 강조 본문 |
+| \`body-lg\` | 18px | 400 | 150% | 중대형 본문 |
+| \`body-md-bold\` | 16px | 700 | 150% | 기본 강조 본문 |
+| \`body-md\` | 16px | 400 | 150% | 기본 본문 |
+| \`body-sm-bold\` | 14px | 700 | 150% | 소형 강조, 레이블 |
+| \`body-sm\` | 14px | 400 | 150% | 소형 본문 |
+| \`body-xs-bold\` | 12px | 700 | 150% | 캡션, 뱃지 |
+| \`body-xs\` | 12px | 400 | 150% | 최소 텍스트 |` },
+      { id: "foundation-spacing", label: "Spacing & Radius", content: `## 2.4 Spacing (Size Scale)
+| 토큰 | 값 |
+|------|-----|
+| \`size/4\` | 4px |
+| \`size/8\` | 8px |
+| \`size/12\` | 12px |
+| \`size/16\` | 16px |
+| \`size/20\` | 20px |
+| \`size/24\` | 24px |
+| \`size/32\` | 32px |
+| \`size/40\` | 40px |
+| \`size/48\` | 48px |
+| \`size/56\` | 56px |
+| \`size/64\` | 64px |
+
+## 2.5 Border Radius
+| 토큰 | 값 | 용도 |
+|------|-----|------|
+| \`radius/xs\` | 4px | 작은 요소 |
+| \`radius/sm\` | 8px | 소형 컴포넌트 |
+| \`radius/md\` | 12px | 기본 컴포넌트 (인풋, 칩) |
+| \`radius/lg\` | 16px | 카드, 대형 컴포넌트 |
+| \`radius/full\` | 9999px | 완전한 원형 |
+| \`radius/checkbox\` | 2px | 체크박스 전용 |
+| \`radius/card\` | 16px | 카드 전용 |
+| \`radius/button\` | 24px | 버튼 전용 (pill) |` },
+    ]
+  },
+];
+
+// 컴포넌트 섹션 데이터 - 80개
+const componentGroups = [
+  { group: "3.1 액션", items: ["Button","Floating Action Button (FAB)","Button Group","Menu Button","Input Button","Button Card"] },
+  { group: "3.2 입력", items: ["Input Box","Textarea","Checkbox","Radio Group","Select Box","Switch","Autocomplete","Date Picker","Flexible Date","DateInput","Spinbutton","File Upload","Consent"] },
+  { group: "3.3 탐색", items: ["Tab","Navigation Bar","Top Bar","LNB","Menubar","Pagination","Sticky"] },
+  { group: "3.4 피드백", items: ["Badge","Chip","Notice Bar","Snack Bar","Tooltip","Dialog","Bottom Sheet","Progress Indicator","System Message","Nudge","Result Box","Loading","Ribbon Banner","Page Feedback"] },
+  { group: "3.5 텍스트 & 아이콘", items: ["Heading","Paragraph","Link","Divider","Icon","Icon-text","Icon-text Information","Legend"] },
+  { group: "3.6 카드 & 컨테이너", items: ["Bottom Card","Content Visual Card","Image Card","Logo Card","Related Card","Data Box","Content Data Box","Image-text Box","Text Box","Boarding Pass","Voucher"] },
+  { group: "3.7 리스트 & 테이블", items: ["List","Listbox","Data Table","Board List","Board View","Link Group","Order List","Order List Tab"] },
+  { group: "3.8 복합 & 도메인", items: ["Accordion","Expander","Carousel (Swiper)","Load More","Chart","Itinerary","FromTo","Passenger","Class"] },
+  { group: "3.9 미디어", items: ["Image","Video"] },
+];
+
+// 컴포넌트 기본 템플릿
+function getComponentTemplate(name) {
+  const templates = {
+    "Button": `#### Button\n\n**정의**\n사용자가 특정 액션을 실행하는 가장 기본적인 인터랙션 요소.\n\n**목적**\n- 예약, 검색, 결제 등 명확한 액션을 트리거한다.\n- 시각적 계층을 통해 주요/보조/파괴적 액션을 구분한다.\n\n**Variants**\n| Property | Values |\n|----------|--------|\n| Type | \`solid\`, \`ghost\`, \`text-only\` |\n| Size | \`lg\`, \`md\`, \`sm\` |\n| State | \`default\`, \`hover\`, \`pressed\`, \`disabled\`, \`loading\` |\n\n**토큰 매핑**\n| Variant | Background | Text | Radius |\n|---------|-----------|------|--------|\n| Solid | \`color/fill/interaction/primary\` (#051766) | \`color/text/inverse\` (#FFFFFF) | \`radius/button\` (24px) |\n| Ghost | transparent | \`color/text/body\` (#051766) | \`radius/button\` (24px) |\n| Disabled | \`color/fill/interaction/disabled\` (#D9D9D9) | \`color/text/disabled\` (#A4A4A4) | \`radius/button\` (24px) |\n\n**Size 스펙**\n| Size | Height | Font |\n|------|--------|------|\n| LG | 56px | \`body-lg-bold\` |\n| MD | 48px | \`body-md-bold\` |\n| SM | 36px | \`body-sm-bold\` |\n\n**Usage**\n- ✅ 레이블은 동사형으로 작성한다\n- ✅ Solid Primary는 한 화면에 1개만 사용한다\n- ❌ 단순 페이지 이동에는 Link 컴포넌트를 사용한다\n\n**접근성**\n- \`<button>\` 태그, \`type="button"\` 명시\n- Disabled: \`aria-disabled="true"\`\n- 최소 터치 영역: 44×44px`,
+  };
+  if (templates[name]) return templates[name];
+  return `#### ${name}\n\n**정의**\n<!-- 이 컴포넌트의 목적과 역할을 작성해주세요 -->\n\n**목적**\n- \n\n**Variants**\n| Property | Values |\n|----------|--------|\n| | |\n\n**토큰 매핑**\n| 요소 | 토큰 |\n|------|------|\n| | |\n\n**Usage**\n- ✅ \n- ❌ \n\n**접근성**\n- `;
+}
+
+// 컴포넌트 섹션을 sections에 추가
+componentGroups.forEach(group => {
+  sections.push({
+    group: group.group,
+    items: group.items.map(name => ({
+      id: 'comp-' + name.replace(/\s+/g,'-').toLowerCase(),
+      label: name,
+      content: getComponentTemplate(name)
+    }))
+  });
+});
+
+// 4. Design Rules
+sections.push({
+  group: "4. Design Rules",
+  items: [
+    { id: "rules-token", label: "토큰 사용 규칙", content: `## 4.1 토큰 사용 규칙
+- Primitive 토큰 (\`color/brand/*\`, \`color/neutral/*\`)을 컴포넌트에 직접 사용하지 않는다.
+- 반드시 Semantic 토큰 (\`color/text/*\`, \`color/fill/*\`, \`color/border/*\`)을 사용한다.
+- 임의의 hex 값을 컴포넌트에 직접 사용하지 않는다.` },
+    { id: "rules-combo", label: "컴포넌트 조합 규칙", content: `## 4.2 컴포넌트 조합 규칙
+- Button Solid Primary: 한 화면에 1개만 허용
+- FAB: 한 화면에 1개만 허용
+- Dialog + Bottom Sheet: 동시 표시 불가
+- Snack Bar: 동시에 1개만 표시
+- Nudge: 동시에 1개만 표시
+- Tooltip + Nudge: 동일 요소에 동시 적용 불가` },
+    { id: "rules-a11y", label: "접근성 필수 규칙", content: `## 4.3 접근성 필수 규칙
+- 색상만으로 정보를 전달하지 않는다 (색상 + 아이콘 또는 텍스트 병행)
+- 텍스트-배경 명암비: WCAG AA 기준 4.5:1 이상
+- 모든 인터랙티브 요소는 키보드로 조작 가능해야 한다
+- 최소 터치 영역: 44×44px
+- 이미지에는 반드시 alt 텍스트를 제공한다` },
+    { id: "rules-i18n", label: "다국어 & 반응형", content: `## 4.4 다국어 지원 규칙
+- 기본 폰트: Hanjin Group Sans (한국어)
+- 일본어 노출 시: Yu Gothic UI
+- 중국어 간체: Microsoft YaHei / 번체: Microsoft JhengHei
+- 텍스트 길이 변화에 대응하는 유연한 레이아웃을 사용한다
+
+## 4.5 반응형 규칙
+- 모바일 (375px~): compact 타이포그래피, 4컬럼 그리드
+- 태블릿 (768px~): 8컬럼 그리드
+- 웹 (980px~): 16컬럼 그리드, wide 타이포그래피
+- Dialog → 모바일에서는 Bottom Sheet로 대체 고려` },
+  ]
+});
+
+// ── 상태 관리 ──────────────────────────────────────────────────
+const edits = {}; // id → 수정된 내용
+let currentId = null;
+
+function getContent(id) {
+  const all = sections.flatMap(s => s.items);
+  const item = all.find(i => i.id === id);
+  return edits[id] !== undefined ? edits[id] : (item ? item.content : '');
+}
+
+function onEdit() {
+  const val = document.getElementById('editor').value;
+  edits[currentId] = val;
+  renderPreview(val);
+  updateSidebarBadge(currentId);
+}
+
+function selectItem(id) {
+  currentId = id;
+  const all = sections.flatMap(s => s.items);
+  const item = all.find(i => i.id === id);
+  if (!item) return;
+
+  // 사이드바 active
+  document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+  document.querySelector(`[data-id="${id}"]`)?.classList.add('active');
+
+  // 헤더 업데이트
+  const groupName = sections.find(s => s.items.some(i => i.id === id))?.group || '';
+  document.getElementById('sectionLabel').textContent = groupName;
+  document.getElementById('editorTitle').textContent = item.label;
+
+  // 에디터 내용
+  const content = getContent(id);
+  document.getElementById('editor').value = content;
+  renderPreview(content);
+}
+
+function updateSidebarBadge(id) {
+  const btn = document.querySelector(`[data-id="${id}"]`);
+  if (!btn) return;
+  const orig = sections.flatMap(s=>s.items).find(i=>i.id===id)?.content;
+  const cur = edits[id];
+  let badge = btn.querySelector('.changed-badge');
+  if (cur !== undefined && cur !== orig) {
+    if (!badge) { badge = document.createElement('span'); badge.className = 'changed-badge'; badge.textContent = '수정'; btn.appendChild(badge); }
+  } else {
+    badge?.remove();
+  }
+}
+
+// ── MD 렌더링 ──────────────────────────────────────────────────
+function renderPreview(md) {
+  let html = md
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/^#### (.+)$/gm, '<h4>$1</h4>')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/^---$/gm, '<hr>')
+    .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
+    .replace(/^- ✅ (.+)$/gm, '<li style="color:#28794E">✅ $1</li>')
+    .replace(/^- ❌ (.+)$/gm, '<li style="color:#DA291C">❌ $1</li>')
+    .replace(/^- (.+)$/gm, '<li>$1</li>');
+
+  // 테이블 처리
+  html = html.replace(/((?:\|.+\|\n?)+)/g, match => {
+    const rows = match.trim().split('\n').filter(r => r.trim());
+    let table = '<table>';
+    rows.forEach((row, i) => {
+      if (row.match(/^\|[-| ]+\|$/)) return;
+      const cells = row.split('|').filter((_,j,a) => j>0 && j<a.length-1);
+      if (i === 0) {
+        table += '<tr>' + cells.map(c=>`<th>${c.trim()}</th>`).join('') + '</tr>';
+      } else {
+        table += '<tr>' + cells.map(c=>`<td>${c.trim()}</td>`).join('') + '</tr>';
+      }
+    });
+    table += '</table>';
+    return table;
+  });
+
+  // li 그룹화
+  html = html.replace(/(<li.*?<\/li>\n?)+/g, match => `<ul>${match}</ul>`);
+  // 줄바꿈
+  html = html.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
+
+  document.getElementById('preview').innerHTML = `<div>${html}</div>`;
+}
+
+// ── 사이드바 렌더링 ──────────────────────────────────────────────
+function renderSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sections.forEach(section => {
+    const div = document.createElement('div');
+    div.className = 'sidebar-section';
+    div.innerHTML = `<div class="sidebar-section-title">${section.group}</div>`;
+    section.items.forEach(item => {
+      const btn = document.createElement('button');
+      btn.className = 'sidebar-item';
+      btn.textContent = item.label;
+      btn.dataset.id = item.id;
+      btn.onclick = () => selectItem(item.id);
+      div.appendChild(btn);
+    });
+    sidebar.appendChild(div);
+  });
+}
+
+// ── 전체 MD 조합 ──────────────────────────────────────────────
+function buildFullMD() {
+  let md = `# WDS (Wing Design System)\n> Korean Air (대한항공) 공식 디자인 시스템. 이 문서를 기반으로 새로운 컴포넌트를 생성하거나 테마를 적용할 때는 반드시 아래 토큰과 규칙을 따라야 한다.\n\n---\n\n`;
+
+  sections.forEach(section => {
+    section.items.forEach(item => {
+      md += getContent(item.id) + '\n\n---\n\n';
+    });
+  });
+  return md;
+}
+
+function downloadMD() {
+  const md = buildFullMD();
+  const blob = new Blob([md], { type: 'text/markdown' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'wds-design-system.md';
+  a.click();
+  showToast('MD 파일이 다운로드되었어요!');
+}
+
+function copyAll() {
+  const md = buildFullMD();
+  navigator.clipboard.writeText(md).then(() => showToast('전체 내용이 복사되었어요!'));
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// 초기화
+renderSidebar();
+// 첫 항목 선택
+selectItem(sections[0].items[0].id);
+</script>
+</body>
+</html>
